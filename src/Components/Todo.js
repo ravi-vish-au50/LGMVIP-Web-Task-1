@@ -14,7 +14,7 @@ export default function Todo({ todos, completeTask, removeTask }) {
         <div className={todo.isComplete ? 'complete task-div' : 'task-div'} key={index}>
             <div className="todo-tex"> {todo.text} </div>
             <div className="icons" key={todo.id}>
-                <TiTick className={todo.isComplete ? 'hide':'tick'} onClick={() => { completeTask(todo.id) }}></TiTick>
+                <TiTick className={todo.isComplete ? 'hide' : 'tick'} onClick={() => { completeTask(todo.id) }}></TiTick>
                 <RiCloseCircleLine className='cross' onClick={() => { removeTask(todo.id) }}></RiCloseCircleLine>
             </div>
         </div>
